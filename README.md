@@ -12,3 +12,15 @@ You can learn more about my course [here](http://courses.springframework.guru).
     -  `https://nickjanetakis.com/blog/docker-tip-73-connecting-to-a-remote-docker-daemon`
 3.  Creating Docker Image in Fabric 8 (44) 
     -  `mvn clean package docker:build`
+4.  Pushing to Dockerhub (45)
+    -  create dockerhub account
+    -  add server to maven `settings.xml`:
+    -  encrypt password by using `mvn --encrypt-password`
+```xml
+<server>
+    <id>docker.io</id>
+    <username>artarkatesoft</username>
+    <password>{your_encrypted_password}</password>
+</server>
+```
+    -  run `mvn clean package docker:build docker:push`
