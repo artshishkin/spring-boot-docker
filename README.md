@@ -24,3 +24,13 @@ You can learn more about my course [here](http://courses.springframework.guru).
 </server>
 ```
     -  run `mvn clean package docker:build docker:push`
+5.  Using A Docker File Template (48)
+
+ 
+##  Section 6 - Running Images from Maven
+
+### Tasks
+1.  Running a Docker image from Maven (52)
+    -  `mvn docker:run` - interactively
+    -  `mvn docker:start` - detached (like `-d`)
+    -  `mvn docker:stop` - stop
